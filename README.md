@@ -114,14 +114,28 @@ Developed by: Koduru Sanath Kumar Reddy
 
 RegisterNumber:  212221240024
 */
+~~~
+## SR FLIPFLOP
+## JK FLIPFLOP
+## D FLIPFLOP
+## T FLIPFLOP
+module T(t,clk,q,qbar);
+input t,clk;
+output q,qbar;
+wire s,r;
+nand(s,t,clk,qbar);
+nand(r,t,clk,q);
+nand(q,s,qbar);
+nand(qbar,r,q);
+endmodule
+~~~
 
 
 
-
-
+## SR FLIPFLOP
 
 ### RTL LOGIC FOR FLIPFLOPS 
-
+![](sr.png)
 
 
 
@@ -132,8 +146,47 @@ RegisterNumber:  212221240024
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 
+## JK FLIPFLOP
+
+### RTL LOGIC FOR FLIPFLOPS 
+![](jk.png)
 
 
+
+
+
+
+
+
+### TIMING DIGRAMS FOR FLIP FLOPS 
+
+## D FLIPFLOP
+
+### RTL LOGIC FOR FLIPFLOPS 
+![](Drtl.png)
+
+
+
+
+
+
+
+
+### TIMING DIGRAMS FOR FLIP FLOPS 
+
+#T FLIPFLOP
+
+### RTL LOGIC FOR FLIPFLOPS 
+![](Trtl.png
+
+
+
+
+
+
+
+
+### TIMING DIGRAMS FOR FLIP FLOPS 
 
 
 
