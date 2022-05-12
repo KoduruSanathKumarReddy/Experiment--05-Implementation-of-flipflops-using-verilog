@@ -218,7 +218,7 @@ endmodule
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
 ![](Dtime.png)
-#T FLIPFLOP
+## T FLIPFLOP
 
 ### RTL LOGIC FOR FLIPFLOPS 
 ![](Trtl.png)
