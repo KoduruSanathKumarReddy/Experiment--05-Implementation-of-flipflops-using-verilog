@@ -145,6 +145,7 @@ endmodule
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
+![](SRtime.png)
 
 ## JK FLIPFLOP
 
@@ -158,7 +159,8 @@ endmodule
 
 
 
-### TIMING DIGRAMS FOR FLIP FLOPS 
+### TIMING DIGRAMS FOR FLIP FLOPS
+![](JKtime.png)
 
 ## D FLIPFLOP
 
@@ -173,7 +175,7 @@ endmodule
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
-
+![](Dtime.png)
 #T FLIPFLOP
 
 ### RTL LOGIC FOR FLIPFLOPS 
@@ -187,8 +189,7 @@ endmodule
 
 
 ### TIMING DIGRAMS FOR FLIP FLOPS 
-
-
+![](Ttime.png)
 
 
 
