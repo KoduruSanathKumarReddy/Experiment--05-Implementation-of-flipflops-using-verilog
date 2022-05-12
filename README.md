@@ -177,7 +177,7 @@ endmodule
 #T FLIPFLOP
 
 ### RTL LOGIC FOR FLIPFLOPS 
-![](Trtl.png
+![](Trtl.png)
 
 
 
