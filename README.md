@@ -102,7 +102,12 @@ Q(t+1)=T′Q(t)+TQ(t)′
 ⇒Q(t+1)=T⊕Q(t)
 
 ### Procedure
-/* write all the steps invloved */
+## Step1:- Create a new project in QuartusII software. 
+## Step2:- Make a suitable name for the project which should be used as the module name in the programming part.
+## Step3:- Declare module, input and output variables. 
+## Step4:- Declare wire variables.
+## Step5:- End the module. 
+## Step6:- Run the program and rtl view simulation. Create the timing diagram for each flipflop. 
 
 
 
@@ -116,9 +121,46 @@ RegisterNumber:  212221240024
 */
 ~~~
 ## SR FLIPFLOP
+
+module sr(s,r,clk,q,qbar);
+input s,r,clk;
+output q,qbar;
+wire x,y;
+nand(x,s,clk);
+nand(y,r,clk);
+nand(q,x,qbar);
+nand(qbar,y,q);
+endmodule
+
+
 ## JK FLIPFLOP
+
+module jk(j,k,clk,q,qbar);
+input j,k,clk;
+output q,qbar;
+wire p,s;
+nand(p,j,clk,qbar);
+nand(s,k,clk,q);
+nand(q,p,qbar);
+nand(qbar,s,q);
+endmodule
+
+
 ## D FLIPFLOP
+
+module D(d,clk,q,qbar);
+input d,clk;
+output q,qbar;
+assign dbar = !d;
+wire x,y;
+nand(x,d,clk);
+nand(y,dbar,clk);
+nand(q,x,y,qbar);
+nand(qbar,y,q);
+endmodule
+
 ## T FLIPFLOP
+
 module T(t,clk,q,qbar);
 input t,clk;
 output q,qbar;
@@ -194,3 +236,4 @@ endmodule
 
 
 ### RESULTS 
+All the flipflops are implemented using verilog programming and their functionality has been validated using functional tables. 
